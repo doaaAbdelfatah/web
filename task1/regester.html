@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="dist/css/register.css"> 
+</head>
+<body>
+    <section id="register" >
+        <h1>Registration Form </h1>
+        <form>
+            <div>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your Full Name"/>
+            </div>
+            <div>
+                <label class="green-color">Email Address:</label>
+                <input type="email" placeholder="Enter your Email"/>
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your Password"/>
+            </div>
+            <div id="div-gender">
+                <label>Gender:</label>
+                <div id="radio-group">
+                    <input type="radio" name="gender" id="m"/> <label for="m">Male</label>
+                    <input type="radio" name="gender" id="f"/> <label for="f">Female</label>
+                </div>
+            </div>
+            <div>
+                <label class="green-color">Hobbies:</label>
+                <div id="div-hobbies">
+                <input type="checkbox" id="reading"><label for="reading">Reading</label>
+                <input type="checkbox" id="traveling"><label for="traveling">Traveling</label>
+                <input type="checkbox" id="gaming"><label for="gaming">Gaming</label>
+                </div>
+            </div>
+            <div>
+                <label>Country:</label>
+                <select>
+                    <option>United State</option>
+                    <option>Canada</option>
+                    <option>Germany</option>
+                    <option>Egypt</option>
+                </select>
+            </div>
+            <div>
+                <label>Date of Birth:</label>
+                <input type="date" />
+            </div>
+            <div>
+                <label>Short Bio:</label>
+                <textarea rows="5" placeholder="Tell us something about yourself ..."></textarea>
+            </div>
+            <div id="terms-div">
+                <label><input type="checkbox"> I agree to the <a href="#">terms and conditions</a></label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </section>
+
+    <h1 id="title2">Login Form </h1>
+    <h1 style="color: rgb(255, 0, 166);font-style: normal;">Test Form </h1>
+</body>
+</html>

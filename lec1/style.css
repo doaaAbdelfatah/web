@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(43, 226, 198);
+    background-image: url("images/baby1.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+}
+h1{
+    color: rgb(187, 17, 17);
+    font-size: 80pt;
+}
+h2{
+    color: yellow;
+    font-size: 50pt;
+}
+h3{
+    font-size: xx-large;
+    border-top: 5px solid red;
+    border-bottom: 5px solid blue;
+    border-left: 5px solid rgb(84, 195, 44);
+    border-right: 5px solid rgb(132, 124, 121);
+    padding: 20px;
+}
+p{
+    border: 10px solid rgb(164, 13, 13);
+    color: burlywood;
+    font-size: 24pt;
+    background-color: black;
+   
+    margin: 25px;
+    padding: 20px;
+    /* comment */
+}
+table,th,td{
+    border: solid ;
+    font-size: 18pt;
+}
+table{
+    border-color: blue;
+}
+td{
+    padding: 0px 10px;
+    color: brown;
+    border-color: cadetblue;
+}
+th{
+    background-color: black;
+    color: wheat;
+}
+
+ul{
+    font-size: 20pt;
+    color: blueviolet;
+}
+ol{
+    font-size: 20pt;
+    color: rgb(92, 226, 43);
+}
