@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            margin: 20px 10px;
+        }
+        table ,td,th{
+            border: 2px solid blueviolet;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding: 5px 10px;
+        }
+        th{
+            background-color: rgb(66, 12, 118);
+            color: rgba(255, 255, 255, 0.906);
+        }
+        tr{
+            background-color: rgba(137, 43, 226, 0.26);
+        }
+        tr:nth-child(odd){
+            background-color: rgba(137, 43, 226, 0.121);;
+        }
+        tr:hover{
+            background-color: rgba(39, 16, 60, 0.776);
+            color: white;
+            cursor: pointer;
+        }
+
+        .shift , .shift th ,  .shift td{
+            border:  2px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Job</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ahmed</td>
+                <td>Customer Services</td>
+                <td>6540</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mai</td>
+                <td>Developer</td>
+                <td>8540</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sara</td>
+                <td>CEO</td>
+                <td>9940</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mohamed</td>
+                <td>Web Developer</td>
+                <td>9540</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Dina</td>
+                <td>Customer Services</td>
+                <td>7740</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="shift">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Job</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ahmed</td>
+                <td>Customer Services</td>
+                <td>6540</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mai</td>
+                <td>Developer</td>
+                <td>8540</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sara</td>
+                <td>CEO</td>
+                <td>9940</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mohamed</td>
+                <td>Web Developer</td>
+                <td>9540</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Dina</td>
+                <td>Customer Services</td>
+                <td>7740</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Job</th>
+                <th>Min Salary</th>
+                <th>Max salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ahmed</td>
+                <td>Customer Services</td>
+                <td>6540</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mai</td>
+                <td>Developer</td>
+                <td>8540</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sara</td>
+                <td>CEO</td>
+                <td>9940</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mohamed</td>
+                <td>Web Developer</td>
+                <td>9540</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Dina</td>
+                <td>Customer Services</td>
+                <td>7740</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
