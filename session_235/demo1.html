@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        input ,select{
+            padding: 10px;
+            margin: 10px;
+            font-size: 14pt;
+        }
+    </style>
+</head>
+<body>
+    <input id="name" type="text" placeholder="Enter your name">
+    <input type="button" onclick="writeMsg()" value="Click me!">
+    <h1 id="msg"></h1>
+    
+    <hr>
+
+    <input id="n1" type="number" min="0" placeholder="N1"> 
+    + <input id="n2" type="number" min="0" placeholder="N2"> 
+    <input type="button" onclick="sum()" value="=">
+    <span id="result"></span>
+
+   
+    <hr>
+
+    <input id="n1x" type="number" min="0" placeholder="N1"> 
+    - <input id="n2x" type="number" min="0" placeholder="N2"> 
+    <input type="button" onclick="sub()" value="=">
+    <span id="resultx"></span>
+
+    <hr>
+
+    <input id="num1" type="number" min="0" placeholder="N1"> 
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input id="num2" type="number" min="0" placeholder="N2"> 
+    <input type="button" onclick="operation()" value="=">
+    <span id="finalResult"></span>
+
+
+    <script>
+        function writeMsg(){
+            let n = document.getElementById("name").value;
+            document.getElementById("msg").innerHTML = "Hello " + n;
+        }
+        function sum(){
+            let x = parseFloat(document.getElementById("n1").value);
+            let y = parseFloat(document.getElementById("n2").value);
+            let s = x +y;
+            document.getElementById("result").innerHTML = s;
+        }
+         function sub(){
+            let x = parseFloat(document.getElementById("n1x").value);
+            let y = parseFloat(document.getElementById("n2x").value);
+            let s = x -y;
+            document.getElementById("resultx").innerHTML = s;
+        }
+
+        function operation(){
+            let x = parseFloat(document.getElementById("num1").value);
+            let y = parseFloat(document.getElementById("num2").value);
+            let op = document.getElementById("operator").value; // +, -,*,/
+            let rslt =0;
+            if(op =="+"){
+                rslt = x +y;
+            }else if(op =="-"){
+                rslt = x -y;
+            }else if(op =="*"){
+                rslt = x *y;
+            }else if(op =="/"){
+                rslt = x /y;
+            }
+            document.getElementById("finalResult").innerHTML = rslt;
+        }
+       
+    </script>
+</body>
+</html>

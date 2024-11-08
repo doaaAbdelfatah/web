@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(52, 74, 74, 0.18);
+}
+
+#rect{
+    background-color: rebeccapurple;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: 200px; 
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;   
+}
