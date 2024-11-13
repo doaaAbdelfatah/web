@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/main.css">
+    
 </head>
 <body>
     <div class="container">
@@ -35,10 +36,52 @@
             <div class="from-row" style="text-align: right;">
                 <button type="button" onclick="validate()">Register</button>
             </div>
-
         </form>
+
+        <hr>
+        <script>
+            let x =null;
+            console.log(x);
+
+            var rslt = x ??=10;
+            console.log(x);
+            console.log(rslt);
+
+            var n1 =10;
+            var n2 = 5;
+
+            n1 += n2; // n1 = n1 + n2
+            console.log(n1);
+
+            let falg = true;
+            let n5 =15;
+            let s ="dodo";
+            let person = {              // object
+                    firstName:"Doaa" , 
+                    lastName:"Mohamed" ,
+                    dob : "1981-11-10"
+                };
+            console.log(person.firstName + " " + 
+            person.lastName + " " + person.dob);
+
+            let names =["doaa" ,"ahmed" ,"mohamed"]; // Array
+            console.log(names[0]);
+            console.log(names[1]);
+            console.log(names[2]);
+
+            person.salary = 5000;
+
+            console.log(person);
+
+            // let emp ={};
+            let emp =new Object();
+            emp.name ="Doaa";
+            emp.job ="Manager";
+            emp.salary =50000;
+            console.log(emp);
+        </script>
     </div>
-    
     <script src="dist/js/main.js" ></script> 
+    
 </body>
 </html>
