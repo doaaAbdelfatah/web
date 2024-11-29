@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Attachment Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+
+  <!-- Fixed Background -->
+  <section class="h-48 bg-fixed bg-cover" 
+    style="background-image: url('images/banner.webp');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50 text-white">
+      <h1 class="text-4xl font-bold">Fixed Background</h1>
+    </div>
+  </section>
+
+  <!-- Local Background -->
+  <section class="h-96 overflow-y-scroll bg-local bg-cover bg-center border-t-4 border-b-4 border-gray-400" 
+    style="background-image: url('images/banner.webp');">
+    <div class="p-6 text-center bg-white bg-opacity-75">
+      <h2 class="text-2xl font-bold">Local Background</h2>
+      <p>This background scrolls with the content inside this container. Try scrolling here!</p>
+      <div class="mt-4 space-y-6 text-gray-700">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Curabitur sodales placerat erat, vel feugiat lectus tincidunt quis.</p>
+        <p>Integer id augue id ligula pellentesque fringilla.</p>
+        <p>Vestibulum a mi nec lacus ullamcorper consectetur.</p>
+        <p>Nam vitae magna nec lorem sodales cursus.</p>
+        <p>Pellentesque habitant morbi tristique senectus et netus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Background -->
+  <section class="h-screen bg-scroll bg-cover bg-center" 
+    style="background-image: url('images/banner.webp');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50 text-white">
+      <h1 class="text-4xl font-bold">Scroll Background</h1>
+    </div>
+  </section>
+
+</body>
+</html>

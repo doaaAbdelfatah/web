@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Attachment Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- Fixed Background -->
+  <section class="h-screen bg-fixed bg-cover bg-center" style="background-image: url('images/banner.webp');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50 text-white">
+      <h1 class="text-4xl font-bold">Fixed Background</h1>
+    </div>
+  </section>
+
+  <!-- Local Background -->
+  <section class="h-96 overflow-scroll bg-local bg-cover bg-center" style="background-image: url('images/banner.webp');">
+    <div class="p-6 bg-white bg-opacity-75">
+      <h2 class="text-2xl font-bold">Local Background</h2>
+      <p>
+        This background scrolls with the content of the container. Keep scrolling to see the effect in action!
+      </p>
+      <p class="mt-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sodales placerat erat, vel feugiat lectus tincidunt quis. Integer id augue id ligula pellentesque fringilla. 
+      </p>
+      <p class="mt-4">
+        Vestibulum a mi nec lacus ullamcorper consectetur. Nam vitae magna nec lorem sodales cursus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Scroll Background -->
+  <section class="h-32 bg-scroll bg-cover bg-center" style="background-image: url('images/banner.webp');">
+    <div class="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-white">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate, quasi, adipisci autem impedit facilis numquam quis molestiae aspernatur quo consectetur illum in culpa. Neque fuga tempora cupiditate harum perferendis?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate, quasi, adipisci autem impedit facilis numquam quis molestiae aspernatur quo consectetur illum in culpa. Neque fuga tempora cupiditate harum perferendis?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate, quasi, adipisci autem impedit facilis numquam quis molestiae aspernatur quo consectetur illum in culpa. Neque fuga tempora cupiditate harum perferendis?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptate, quasi, adipisci autem impedit facilis numquam quis molestiae aspernatur quo consectetur illum in culpa. Neque fuga tempora cupiditate harum perferendis?</p>
+    </div>
+  </section>
+</body>
+</html>
